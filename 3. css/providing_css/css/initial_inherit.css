@@ -1,0 +1,12 @@
+body{
+  margin: 10px;
+}
+p{
+  color: dodgerblue;/* 'strong' inherits this color from parent 'p' by default */
+  border: 1px solid black; /* doesn't inherit the border by default */
+}
+
+strong{
+  color: initial;/* can set inherited property back to its initial color with 'initial' */
+  border: inherit; /* can tell it to inherit the property when it doesn't by default */
+}

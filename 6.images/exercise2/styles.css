@@ -1,0 +1,38 @@
+
+
+body{
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+section.menu{
+  background: #212138;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+
+.icon{
+  font-size: 0.1rem;
+  color: white;
+  word-spacing: 1rem;
+  margin: 1rem;
+}
+
+section div{
+  display: flex;
+  margin: 0.1rem;
+  padding: 0rem;
+}
+
+section div:hover{
+  background: #221a2e;
+}
+
+@media screen and (min-width: 1000px){
+  section.menu{
+    width: 25%;
+  }
+}

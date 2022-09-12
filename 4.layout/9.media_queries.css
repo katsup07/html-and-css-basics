@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  background-color: gold;
+  padding: 1rem;
+}
+
+.box:nth-of-type(2){
+  background: dodgerblue;
+}
+
+/* Styles are applied if screen is wider than 600px*/
+@media screen and (min-width: 600px){
+  .container{
+    flex-direction: row
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container{
+    flex-direction: row
+  }
+
+  .box {
+    background: green;
+  }
+}
+
+
+/* Styles are applied if screen is wider than 600px, but less than 900px*/
+/* @media screen and (min-width: 600px) and (max-width: 900px){
+  .container{
+    flex-direction: row
+  }
+} */
+
+/* print is for printer */
+@media print {
+  body{
+    font-size: 12pt; /* use points for fonts on printer */
+  }
+
+  .box {
+    padding: 0.5cm
+  }
+}

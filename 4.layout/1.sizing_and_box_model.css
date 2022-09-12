@@ -1,0 +1,32 @@
+/* "*" is a universal selector to select all html elements */
+*, *::before, *::after {
+
+  /* ? set to "content-box" by default, which when padding and border are added the element's size will increase*/
+  /* ~ border-box factors padding and border into the size of the element and the element remains the same size, so this is generally what people use */
+  box-sizing: border-box; 
+}
+
+body {
+  margin: 10px;
+}
+
+.box::before{
+  content: "hello";
+}
+.box::after{
+  content: "good-bye";
+}
+
+
+
+.box {
+  font-size: 10px;
+  width: 100px;
+  height: 100px;
+  background: gold;
+  padding: 20px;
+  border: 10px solid orange;
+  display: inline-block; /* respects width and height and stays on the same line */
+ /*  "display: inline" doesn't respect width and height properties and stays on same line */ 
+ /* defaults to "display: block" which respects width and height and takes up whole line. By default the height is zero and width is the width of their parent container */
+}

@@ -1,0 +1,24 @@
+body{ /* selecting by css selector */
+ 
+}
+
+#clothing{}/* selecting by id */
+
+.product{}/* selecting by class */
+
+p{
+  color: orange;
+}
+
+a[target="_blank"] {/* select by attribute. Needn't include the value */
+
+}
+
+a[href*="google"]{/* using "*=" searches for the word google somewhere in the link. This is less fragile, since as long as "google" is in the link somewhere, the link can be changed in other ways. */
+  color: yellow;
+}
+a[href^="https"]{/* "^=" selects all anchor elements whose href attribute starts with "https". To check for ending with a certain value, use "$=" */
+}
+
+a[href^="https"][href$=".com"]{/* Selects elements whose href attributes start with "https" and end with ".com" */
+}

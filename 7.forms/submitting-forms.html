@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <!-- action="some_url_where_data_will_be_sent" -->
+  <!-- To submit a form each input field should have a name="..." attribute, since it will be included in the body of the request when the email is sent -->
+  <form action="https://formspree.io/f/mwkzvzjo" method="GET">
+    <input type="text" placeholder="Name" name="name">
+    <input type="text" placeholder="Email" name="email">
+    <button type="submit"><i class="fas fa-alert"></i>Submit</button>
+  </form>
+</body>
+</html>
+
+<!-- ? Notes -->
+  <!-- Buttons  allow for adding icons and such between the tags, whereas type="submit" input fields do not. They both work for submitting forms, but conceptually buttons make more sense.-->
+    <!-- <input type="submit" value="submit"> -->

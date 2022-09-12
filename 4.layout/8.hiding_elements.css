@@ -1,0 +1,4 @@
+.first {
+  /* display: none; *//* It basically removes the element as if it is not there */
+  visibility: hidden; /* Element is there and occupies space, but is hidden */
+}

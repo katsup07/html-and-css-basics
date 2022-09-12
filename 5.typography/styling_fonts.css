@@ -1,0 +1,44 @@
+@font-face { /* Need to be at top to register the fonts before can use them */
+  font-family: 'open_sans_bold';
+  src: url('fonts/open-sans/opensans-bold-webfont.woff2') format('woff2'),
+       url('fonts/open-sans/opensans-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
+       url('fonts/open-sans/opensans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback; /* Waits a few seconds for custom font to be loaded, and if it isn't, then will continue with the fallback font rather than having an awkward layout shift occur */
+  /* "optional" is the same as "fallback" but the browser will store it in cache whether it downloads in time or not, and next time, it will be able to use it */
+
+}
+
+body {
+  margin: 10px;
+  font-size: 60px;
+
+  /* These are system fonts stack that are used by different systems: apple, windows, android etc. */
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+  /* The first 'Open Sans' is from google fonts. The second 'open_sans' is from fontsquirrel.com */
+  /* font-family:'Open Sans', 'open_sans', 'Courier New', Courier, monospace; The first two are downloaded font styles */
+
+/*   font-family: Arial, Helvetica, sans-serif; This is one websafe stack */
+
+}
+
+h1 {
+  font-family: monospace;
+}
+
+p{
+  font-weight:899;
+  font-style: italic;
+  color: #333
+}

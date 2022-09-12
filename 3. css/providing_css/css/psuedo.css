@@ -1,0 +1,34 @@
+
+
+body {
+  margin: 10px;
+}
+/* psuedo classes are classes that browsers apply by default */
+article p :first-child{/* this psuedo class selector is applied to the first child of article: h1*/
+  font-size: 140%;
+  font-style: italic;
+}
+
+article p:first-of-type{/* applied to the first occurence of elements of different types */
+  color: blue;
+}
+
+article :last-child{/* ":last-of-type" works here too and is similar to first-of-type */
+  font-weight: bold; /* applied to the link*/
+}
+
+ul li:nth-child(n){/* it's like a function and can take, even, odd, n, 2n etc. as args */
+  color: green;
+}
+
+
+a:visited{
+  color: rgb(114, 99, 73);
+}
+
+a:link{
+  color: plum;
+}
+a:hover, a:focus{/* when hovering with cursor, or using tab on keyboard to focus */
+  color: rgb(255, 30, 30)
+}

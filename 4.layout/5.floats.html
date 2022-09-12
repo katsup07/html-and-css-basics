@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="5.floats.css">
+  <title>Document</title>
+</head>
+<body>
+  <article class="tweet clear-fix">
+    <div class="avatar"></div>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <!-- When using floats you need to clear after, otherwise layout issues arise -->
+    <!-- ! .clear stops this class from floating around the avatar -->
+    <!--~ However, a better solution is to use psuedo elements to dynamically do the same without polluting the markup here with non semantic elements  -->
+    <!-- ? "overflow: auto or hidden" both kind of work too, but sometimes scroll bars or clipped content might occur when setting it. Use psuedo elements instead-->
+    <!-- <p class="clear">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta, dolor dolores perferendis quae architecto iusto in mollitia laboriosam facere officiis placeat incidunt quis aliquid fugiat. Magni, maxime necessitatibus reprehenderit iusto inventore voluptates nostrum sunt laborum numquam illum quo sequi cum consectetur quas voluptatibus autem incidunt labore quae obcaecati! Mollitia.</p> -->
+
+    <!-- ! .clear stops the container from collapsing around the avatar if the paragraphs are removed -->
+   <!--  <div class="clear"></div> -->
+  </article>
+</body>
+</html>

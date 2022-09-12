@@ -1,0 +1,10 @@
+
+body {
+  background-image: url(images/bg-sanfrancisco.jpg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  /* "cover" will cover all 300vh, but "fixed" will cover 100vh */
+  background-attachment: fixed; /* background-size: 100% 50%; width height */
+  height: 300vh;
+}

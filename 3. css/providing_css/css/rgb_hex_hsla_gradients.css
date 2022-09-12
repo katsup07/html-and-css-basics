@@ -1,0 +1,51 @@
+/* ! rgb */
+/* .box{
+  width: 200px;
+  height: 200px;
+  background: rgb(30, 45, 105, 1); /* (red, gree, blue, alpha) alpha=0 is transparent and alpha=1 is opaque
+} */
+/* ! hexidecimal */
+/* .box{
+  width: 200px;
+  height: 200px;
+  background: #1e2d69; /* hexidecimal has no alpha
+} */
+
+/* ! hsla */
+/* .box{
+  width: 200px;
+  height: 200px;
+  background: hsla(228, 50%, 26%, 99); /* hsl(hue, saturation, lightness, alpha). remove the degree character in hue.*/
+  /*  this works too hsla(223deg 50% 26%) 
+} */
+
+/* ? linear gradients */
+ /* .box{
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(20deg,dodgerblue, yellow 70%);/* to right, to bottom right, 45deg etc 
+} */
+
+ /* .box{
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(20deg,dodgerblue, yellow, tomato, green, purple, indigo, black);
+} */
+
+/* ? radial gradients */
+ /* .box{
+  width: 1400px;
+  height: 700px;
+  background: radial-gradient(circle at top left, white, yellow);
+} */
+
+/* ? online tools*/
+/* https://cssgradient.io/ */
+ .box{
+  width: 1400px;
+  height: 700px;
+  background: rgb(127,8,104);
+  background: linear-gradient(90deg, rgba(127,8,104,0.8195144268644958) 38%, rgba(255,178,0,1) 100%); 
+}
+
+

@@ -1,0 +1,26 @@
+body{
+  margin: 10px;
+  font-size: 2rem;
+ /*  direction:rtl; *//* lines go from right to left = rtl */
+}
+
+p {
+  text-align: left;
+  text-indent: 1rem;/* indent on first line */
+  /* text-decoration:underline; */
+  /* text-transform: capitalize; */ /* capitalizes first letter of each word */
+  
+  /*? Truncating Text */
+  /* border: 3px solid gold; */
+  /* white-space: nowrap; *//* line doesn't wrap and get a single line in each paragraph */
+ /*  overflow: hidden;
+  text-overflow: ellipsis; */
+
+  /*? Split into multiple columns*/
+  /* column-count: 2; */
+  /* column-gap: 4rem; */ /* space between columns */
+  /* column-rule: 1px ridge rgb(0, 0, 0); */
+  
+ 
+
+}

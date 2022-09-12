@@ -1,0 +1,76 @@
+body{
+  background: black;
+}
+
+.container{
+  height: 90vh;
+  display: grid;
+ /*  grid-template-rows: repeat(3, 100px); */ /* 100px 100px 100px; */
+  /* grid-template-columns: repeat(2, 100px); */ /* 100px 100px; */
+  /* The below is shorthand for the above two lines */
+ /*  grid-template: repeat(3, 100px)/repeat(2,100px); */
+  
+ /* ! prefer fr = fractions to %, since they will evenly distribute based on what's left, whereas % will distribute based on the container size, which means you need to do more math */
+ grid-template: 100px auto auto auto auto auto auto / 20fr 60fr 10fr 10fr;/* "auto" will grow/shrink and fill the entire space. great for resizing */
+  border: 3px solid rgb(30, 27, 195);
+  gap: 10px 30px; /* shortform for "row-gap and column-gap" */
+
+
+  /* ? by default set to "stretch", provided no width/height defined for items */
+  /* ! content = container */
+  /* justify-content: center; */ /* align container along the horizontal axis */
+  /* align-content: center; */ /* align container along the vertical axis */
+
+   /* ? by default set to "stretch", provided no width/height defined*/
+  /* ! items = items inside the container */
+  /* justify-items: center; *//* align items along the horizontal axis */
+  /* align-items: center; */ /* align items along the vertical axis */
+
+  /* define the names of each cell in the grid */
+  grid-template-areas: 
+  "header header header header" 
+  "sidebar main  main   sidebar" 
+  "sidebar main  main   sidebar" 
+  "sidebar main  main   sidebar" 
+  "sidebar main  main   sidebar" 
+  "sidebar main  main   sidebar" 
+  "footer footer footer footer";
+}
+
+.box{
+ /*  color: white;
+  width: 3rem;
+  height: 3rem; */
+  background: goldenrod;
+}
+
+.box-a {
+  grid-column: 1 / 3; /* start box-a at line 1 and go until line 3. everything else will be pushed down or over */
+  /* grid-column: 2; *//*  positions box-a in the second column and pushes everything else over or down */
+}
+
+.box-b {
+  /* grid-column: 1 / -1; */ /* go from start line to end line(i.e span the whole row)*/
+  grid-column: 1 / span 5; /*  start at line 1 and span 5 columns */
+}
+
+.box-c {
+  grid-row: 2; /* puts box c in second row and adjusts other boxes to facilitate the move */
+}
+
+.box-d{
+  /* grid-area is short form of grid-row and grid-column, but is a little difficult to read */
+  /* start row / column    end row / column */
+  grid-area: 4 / 2 / 4 / 3; /* go from (row 4 / col 2 to row 4 / col 3 */
+}
+
+.box-e{
+  grid-row: 5 / span 1;
+  
+}
+
+
+.box-f{
+  grid-area: header;
+  
+}

@@ -1,0 +1,50 @@
+body{
+  margin: 10px;
+  height: 200vh;
+}
+
+.boxes{
+  border: 3px solid rgb(118, 117, 117);
+  position: relative;/* ! need to set parent to "relative" before setting its children to "absolute" */
+}
+
+.box{
+  width: 5rem;
+  height: 5rem;
+}
+
+.box-one{
+  background: gold;
+}
+
+/* !! fixed, relative, and absolute positioning of elements */
+
+/* # fixed: relative to the viewport*/
+/* ? relative: relative to the elements's normal position*/
+/* ~ absolute: relative to parent */
+.box-two{
+  background: tomato;
+  position: fixed;/* position the elment so that it never moves. For example a top navigation bar. As you scroll down the page, box-two will remain at the top of the page */
+  top: 0;
+  
+
+
+ /*  position: relative;/* position element relative to its normal position and doesn't affect other elements on page. by default elements are positioned as static
+  z-index: -1;/* z axis comes out of the screen. set to 0 by default. now will go behind box-one
+  left: 4rem;
+  bottom: 4rem;
+  */
+
+ /*  position: absolute; *//* position element relative to its container. no longer follows normal flow of page. other elements are positioned like the absolute one doesn't exist.*/
+  /* ! note that the container of the absolute element needs to be positioned relatively */
+  /* right: 0; *//* since absolute, goes 0 from right */
+ /*  bottom: 0; */
+
+  /*  left: 5rem;/* browser will automatically decide how wide box shold be */
+/*   right: 5rem;
+  width: auto;
+   */
+}
+.box-three{
+  background: dodgerblue;
+}

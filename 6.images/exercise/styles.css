@@ -1,0 +1,55 @@
+
+
+section.space_image {
+  font-size: 4rem;
+  font-family: Poppins;
+  background-image: url(starry_space.jpg);
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  color: white;
+  font-weight: 900;
+  text-shadow: 0.3rem 0.3rem rgba(0, 0, 0, 0.39);
+}
+.tagline{
+  background: rgba(0, 0, 0, 0.391);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 300;
+  font-size: 90%;
+}
+@media screen and (min-width: 1px) {
+  section.space_image {
+    font-size: 1rem;
+    background-image: url(starry_space_935.jpg);
+  }
+}
+@media screen and (min-width: 853px) {
+  section.space_image {
+    text-align: center;
+    font-size: 1.5rem;
+    background-image: url(starry_space_935.jpg);
+  }
+}
+@media screen and (min-width: 1282px) {
+  section.space_image {
+    font-size: 2rem;
+    background-image: url(starry_space_1282.jpg);
+  }
+}
+@media screen and (min-width: 1440px) {
+  section.space_image {
+    font-size: 3rem;
+    background-image: url(starry_space_1440.jpg);
+  }
+}

@@ -1,0 +1,53 @@
+.container-center{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.sprite {
+    background-image: url(./images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;  
+}
+
+.sprite-dishes {
+    width: 100px;
+    height: 100px;
+    background-position: -5px -5px;
+    position: absolute;
+    right: 0;
+}
+
+.sprite-landing {
+    width: 100px;
+    height: 100px;
+    background-position: -115px -5px;
+    position: absolute;
+    bottom: 0;
+}
+
+.sprite-rocketship {
+    width: 100px;
+    height: 100px;
+    background-position: -5px -115px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.sprite-saturn {
+    width: 100px;
+    height: 100px;
+    background-position: -115px -115px;
+}
+
+.sprite-ufo {
+    width: 100px;
+    height: 100px;
+    background-position: -225px -5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

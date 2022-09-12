@@ -1,0 +1,30 @@
+.container{
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background: dodgerblue;
+  border: 10px solid royalblue;
+  border-top: 20px dashed royalblue;
+  border-width: 5px 20px 5px 50px; /* trbl = top right... */
+  border-color: red;
+  border-radius: 10%; /* make it into a circle at 100% */
+}
+
+.box2{
+  width: 50%;
+  height: 50%;
+  background: rgb(196, 150, 0);
+  box-shadow: 0 0px 30px grey; /* shadowLeft-/Right+  up-/down+  blur   color */
+}
+
+h1{
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}

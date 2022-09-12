@@ -1,0 +1,47 @@
+body{
+  margin: 10px;
+}
+/* pseudo classes are used to style elements in a particular state, like hovering an anchor(link) */
+/*pseudo elements are used to style part of an element, like the first letter in a paragraph p  */
+p::first-letter {/* pseudo element for changing first letter in sentence */
+  font-size: 140%;
+  font: bold;
+}
+
+p::first-line{/* pseudo element for changing first line */
+  color: blue;
+}
+
+::selection{/* any selected element will have a pink background */
+  background-color: pink;
+}
+
+p::before {/* adds "..." before the content of paragraph */
+  content: "...";
+  display: block; /* changes from default inline to block level element */
+}
+p::after {/* adds "zzzzzzzzzzzzzzzz" after the content of paragraph */
+  content: "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz";
+  display: block; /* changes from default inline to block level element */
+}
+
+/* ! Hover and you will see Selector Specificity: (element, class, id). */
+/* For example, Selector Specificity(0, 0, 1) here, so specificity of 1*/
+h1{ 
+  color: green;/* "!important" will discard other specificity rules */
+}
+
+/* specificity of 10 */
+.heading{
+  color: pink
+}
+
+/* specificity of 100 */
+#products{
+  color: blue;
+}
+
+/* specificity of 111 - combine multiple selectors to increase specificity of element */
+h1.heading#products{
+  color: rgb(144, 68, 104);
+}

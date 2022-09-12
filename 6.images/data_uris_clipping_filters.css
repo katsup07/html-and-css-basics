@@ -1,0 +1,11 @@
+
+/*  https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
+
+.meal:hover{
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  filter: grayscale(70%) blur(2px) hue-rotate(250deg) drop-shadow(15px 15px 20px black);
+}
+
+.ufo:hover{
+  filter: hue-rotate(250deg) drop-shadow(15px 15px 10px rgb(125, 124, 124)) contrast(400%);
+}

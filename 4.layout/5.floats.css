@@ -1,0 +1,24 @@
+/* ? Floats were used in the past, but are difficult to maintain. Nowadays use Flexbox or Grid instead. */
+
+.avatar{
+  width: 5rem;
+  height: 5rem;
+  background: gold;
+  margin-right: 0.5rem;
+  float: left; /* floats the element to the left side of its container and everything else floats around it. */ /* ! Be careful because by default parent elements don't see floated elements, and this can lead to collapsing occuring around them. For example, if you remove paragraph two the ".tweet" border collapses and the avatar goes outside of the border.*/
+}
+
+.tweet {
+  border: 3px solid grey;
+}
+
+/* does the same as adding the div at the bottom of the ".tweet" container, but doesn't pollute he markup with non semantic elements */
+.clear-fix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clear {
+  clear: left;/* clear left, right, or both when there is an element or more you need to stop from floating around an element that has "float" applied to it */
+}

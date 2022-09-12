@@ -1,0 +1,19 @@
+body{
+  margin: 10px;
+}
+
+#products p{ /* descendent selector for all descendents "p" in products*/
+  color: blue;
+}
+
+#products > p{ /* direct descendent selector for all direct p descendents in products*/
+  color: rgb(0, 255, 34);
+}
+
+#products ~ p{ /* direct sibling selector for All the p after products section*/
+  color: rgb(255, 0, 76);
+}
+
+#products + p{ /* direct sibling selector for the first p after products section*/
+  color: orange;
+}

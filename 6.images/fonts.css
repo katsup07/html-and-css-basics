@@ -1,0 +1,7 @@
+.icon {
+  font-size: 2rem;
+  color: dodgerblue;
+  background: green;
+  /* Filters can be added to icons too */
+  filter: grayscale(70%);filter: blur(3px);filter: brightness(0.5);filter: contrast(200%);filter: drop-shadow(10px 10px 10px grey);filter: hue-rotate(90deg);filter: invert(50%);filter: saturate(25%);filter: sepia(50%);filter: opacity(50%);filter: grayscale(50%) blur(20px);
+}
