@@ -1,0 +1,27 @@
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 72, 0);
+  font-size: 0.7rem;
+  padding: 1rem;
+  border: 30px solid rgb(255, 125, 125);
+  /* _ Applied to the box, not the hover state */
+  transition: transform 1s, background 1s; /* applied to transform and background over 1s each */
+ /*  transition: transform 0.5s; */ /* applied to transform over 0.5 seconds */
+ /*  transition: transform 0.5s linear 1s;  *//* 1s delay */
+ /*  transition: transform 1s cubic-bezier(.79,.02,1,.3); */
+}
+
+.box:hover {
+     transform: rotate(45deg);
+     background: dodgerblue;
+}
+

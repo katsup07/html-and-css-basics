@@ -1,0 +1,29 @@
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background: rgb(0, 115, 255);
+  font-size: 0.7rem;
+  padding: 1rem;
+  border: 30px solid rgb(255, 125, 125);
+}
+.container {
+  perspective: 200px; /* perspective property: Now all children will share the same perspective */
+}
+.container:hover .box {
+  /* perspective is the number of pixels on z-axis between us and box */
+ /*  transform: perspective(100px) translateZ(-50px); */ /* Different perspective with perspective() function */
+     transform: rotateY(45deg);
+     transform-origin: 0 50%
+}
+
+.container:hover .box-special {
+  transform: rotateX(45deg);
+}

@@ -1,0 +1,23 @@
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background: gold;
+  font-size: 0.7rem;
+}
+
+.box:hover {
+/* = individually */
+/*  transform: rotate(15deg);
+ transform: scale(5);
+ transform: skew(35deg);
+ transform: translate(-55px); */
+ /* = or together */
+ transform: rotate(45deg) translateX(100px) skew(35deg) scale(5); /* The order will change the transformation */
+}

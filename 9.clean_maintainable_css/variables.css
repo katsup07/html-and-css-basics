@@ -1,0 +1,22 @@
+:root {
+  /* _ custom properties that are inherited by all elements in dom. Can access with var() function */
+  --color-primary: #366fff;
+  --border-size: 1px;
+  --border-radius: 10px;
+}
+
+body{
+  background: black;
+}
+
+.one {
+  background: var(--color-primary);
+  border: var(--border-size) solid rgb(255, 255, 255);
+  border-radius: var(--border-radius);
+  margin: 1rem;
+  padding: 0.1rem;
+}
+
+.two {
+  background: var(--color-primary);
+}

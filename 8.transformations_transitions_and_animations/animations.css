@@ -1,0 +1,65 @@
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* _ can define name for your custom animations and numbers etc. */
+@keyframes pop {
+  0%{ /* 1st frame */
+    transform: scale(1); /* _ normal start point of box at 0 seconds */
+  }
+  25% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: rotate(45deg);
+    background: goldenrod;
+  }
+  65%{
+    background: rgb(32, 218, 41);
+    transform: rotate(75deg);
+  }
+  75% {
+    background: rgb(32, 218, 41);
+    transform: rotate(45);
+  }
+  93%{
+    background: purple;
+  }
+
+}
+.box{
+  width: 100px;
+  height: 100px;
+  background: rgb(0, 115, 255);
+  font-size: 0.7rem;
+  padding: 1rem;
+  border: 30px solid rgb(255, 125, 125);
+  animation-name: pop; /*  set name and duration in element */
+  animation-duration: 8s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;/* default is one, can have 2,3,4 etc */
+  animation-timing-function: ease-in;
+ /*  animation-timing-function: cubic-bezier(); */ /* linear, ease-in, cubic-bezier()... */
+ animation-direction: alternate; /* switches the order */
+ /* _ type "ani" to get shortcut with all animations. This way you can just tab into the ones you will use and quickly create an animation ---> */ /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+/* - Reuse animations by making into a class, like below */
+.animation-pop{
+  width: 100px;
+  height: 100px;
+  background: rgb(0, 115, 255);
+  font-size: 0.7rem;
+  padding: 1rem;
+  border: 30px solid rgb(255, 125, 125);
+  animation-name: pop; /*  set name and duration in element */
+
+}
+
+
+
+

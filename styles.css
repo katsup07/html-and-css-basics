@@ -1,0 +1,20 @@
+table, td{
+  border-collapse: collapse;
+  padding: 15px;
+  margin: 10px;
+}
+
+tr:first-child{
+  background: #427fef;
+  color: white;
+  font-weight: bold;
+  border-color: #427fef;
+}
+
+ .center{
+  border-bottom: 1px solid #c4dcf3;
+}
+
+tr.center:nth-child(2n + 1){
+  background: rgba(198, 200, 211, 0.597);
+}
